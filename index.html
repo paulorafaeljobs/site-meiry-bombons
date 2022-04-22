@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icon.png"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@100&family=Raleway:wght@200;400&family=Reem+Kufi&family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+    <title>Meiry Bombons</title>
+</head>
+<style>
+    html{scroll-behavior: smooth;}
+    *{font-family: 'Open Sans', sans-serif;font-family: 'Outfit', sans-serif;font-family: 'Raleway', sans-serif;font-family: 'Reem Kufi', sans-serif;font-family: 'Roboto', sans-serif;text-decoration: none;margin: 0;padding: 0;}
+    body{background-color: #FFFFFF;}
+    .header{position: fixed; height: 60px; width: 100%;display: flex;justify-content: space-between;align-items: center;background-color: #5D3221;}
+    .header > ul {display: flex;padding-right: 20px;}
+    .header > ul >li {color: white;list-style: none;padding-right: 15px; padding-left: 15px;}
+    .header > ul >li > a{color: white;text-decoration: none;}
+    .logos{width: 30px;}
+    .header > a {padding-left: 15px;padding-right: 15px;}
+    .header > div > li {padding-left: 15px;padding-right: 15px;color: white;}
+    .menu {background-color: #FFC2C7;line-height: 70px;width: 100%;}
+    .menu > ul {display: flex;list-style: none;text-align: center;}
+    .menu > ul > li {width: 25%;font-size: 20px;}
+
+
+    #contato{background-image: url(img/bombom1.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;height: 500px;width: 100%;text-align: center;}
+    .home{background-image: url(img/img1.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;height: 750px;width: 100%;text-align: center;}
+    .button{border-radius: 40px;margin: auto;width: 380px;line-height: 80px;font-size: 20px;background-color: #FFC2C7;color: white;}
+    .btn1{border-radius: 30px;width: 300px;height: 55px;font-size: 15px;color: #5D3221;border: solid 5px #5D3221;background-color: #FFC2C7;}
+    .home > div {width: 450px;margin: auto;}
+
+    section{text-align: center;color: white;}
+    .flexbox{text-align: center;margin: auto;display: flex;flex-wrap: wrap;width: 60%;}
+    .flex {flex-grow: 1;flex-shrink: 1;flex-basis: 150px;margin: 10px;}
+    .flex > img {width: 100%;}
+    section > h1 {font-size: 30px;color: white;padding: 20px;}
+
+    .grid {margin: auto; display: flex;width: 50%;flex-wrap: wrap;text-align: center;}
+    .grid-row1 {flex: 40%;font-size: 30px;margin-top: 30px;font-weight: bold; }
+    .grid-row2 {flex: 40%;}
+    form {width: 300px;margin: auto;margin-bottom: 50px;}
+    form > input {width: 300px;padding: 10px;margin: 5px;border-radius: 10px;border: none;}
+    form >textarea {width: 300px;margin: 5px;padding: 10px;border-radius: 10px;border: none;}
+    form > button {background-color: white; border: none; width: 322px;margin: 5px;padding: 10px;border-radius: 10px;border: none;}
+
+    .logo-principal{margin-bottom: 80px; width: 450px;margin-top: 230px;}
+    .galeria-img {width: 60%;}
+
+    @media screen and (max-width: 900px){
+        #galeria > img {width: 100%;}
+        .header > ul > li {display: none;}
+        .logo-principal {width: 250px;}
+
+        form {width: 100%;}
+        form > input {width: 100%;}
+        form >textarea {width: 100%;}
+        form > button {width: 100%;}
+
+        .grid-row1{display: none;}
+        .home > div {width: 350px;margin: auto;}
+        .btn1{border-radius: 30px;width: 200px;height: 55px;font-size: 12px;}
+    }
+
+</style>
+<body>
+    <header class="header">
+        <div>
+            <li style="margin-left: 50px;list-style: none; border:solid 3px #FFC2C7;border-radius: 20px;line-height: 30px;">+55 027 993113363</li>            
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>  
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#bolos">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.instagram.com/meirybombons/"><img class="logos" src="logos/icon_instagram.png"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100069327430204"><img class="logos" src="logos/_facebook.png"></a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5527993113363&text&app_absent=0"><img class="logos" src="logos/logo_whatsapp_1.png"></a></li>
+        </ul>
+    </header>
+    <section id="home" class="home">
+        <div>
+            <img class="logo-principal" src="img/logo.png">
+            <a href="#bolos"><button class="btn1"> CONHEÇA NOSSOS PRODUTOS</button></a> 
+        </div>
+    </section>
+    <section id="galeria">
+        <h1 style="color: #5D3221;">Galeria</h1>
+        <img class="galeria-img" src="img/Home.png" >
+    </section>
+    <section id="bolos">
+        <h1 style="color: #5D3221;" >Nossos Produtos</h1>
+
+        <h1 style="color: #5D3221;">Bombons</h1>
+        <div class="flexbox">
+            <div class="flex">
+                <img src="img/Bombons/img1.jpg">
+            </div>
+            <div class="flex">
+                <img src="img/Bombons/img2.jpg">
+            </div>
+            <div class="flex">
+                <img src="img/Bombons/img3.jpg">
+            </div>
+            <div class="flex">
+                <img src="img/Bombons/img4.jpg">
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="flex">
+                <img src="img/Bombons/img5.jpg">
+            </div>
+            <div class="flex">
+                <img src="img/Bombons/img6.jpg">
+            </div>
+            <div class="flex">
+                <img src="img/Bombons/img7.jpg">
+            </div>
+            <div class="flex">
+                <img src="img/Bombons/img8.jpg">
+            </div>
+        </div>
+
+        <h1 style="color: #5D3221;" >Bolos</h1>
+        <div class="flexbox">
+            <div class="flex">
+                <img src="img/Bolos/bolo1.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Bolos/bolo2.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Bolos/bolo3.jpg" alt="">
+            </div>
+            <div class="flex ">
+                <img src="img/Bolos/bolo4.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Bolos/bolo5.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Bolos/bolo6.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Bolos/bolo7.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Bolos/bolo8.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Bolos/bolo9.jpg" alt="">
+            </div>
+        </div>
+
+        <h1 style="color: #5D3221;">Festa na Caixa</h1>
+        <div class="flexbox">
+            <div class="flex">
+                <img src="img/Festa-na-caixa/festa1.png" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Festa-na-caixa/festa2.png" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Festa-na-caixa/festa3.png" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Festa-na-caixa/festa5.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Festa-na-caixa/festa4.png" alt="">
+            </div>
+        </div>
+
+        <h1 style="color: #5D3221;">Ovo de Colher</h1>
+        <div class="flexbox">
+            <div class="flex">
+                <img src="img/Ovos/img6.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Ovos/img7.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Ovos/img9.jpg" alt="">
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="flex">
+                <img src="img/Ovos/img1.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Ovos/img2.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="img/Ovos/img3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <br><br>
+            <h1>Contato</h1>
+            <div class="grid">
+                <div class="grid-row1">
+                    <p>e ai, gostou dos nossos Produtos?</p>
+                    <p>Mande uma mensagem agora mesmo solicitando um orçamento.</p>
+                </div>
+                
+                <div class="grid-row2">
+                    <form onsubmit="FormApi('b6fbcf7fe593b33cefe19347fc69365e')" method="post">
+                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="telefone" placeholder="Telefone">
+                        <textarea id="mensagem" placeholder="Mensagem" cols="30" rows="5"></textarea>
+                        <button type="submit" id="btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <footer style="background-color: #FFC2C7;padding: 10px;text-align: center;">
+        <img style="margin-bottom: 10px;width: 200px;" src="img/logo.png">
+        <div style="margin-bottom: 30px;">
+            <a href="https://www.instagram.com/meirybombons/"><img style="width: 30px;" src="logos/icon_instagram - Copia.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100069327430204"><img style="width: 28px;" src="logos/_facebook - Copia.png"></a>
+            <a href="https://api.whatsapp.com/send/?phone=5527993113363&text&app_absent=0"><img style="width: 30px;" src="logos/logo_whatsapp_1 - Copia.png"></a>
+        </div>
+        <p style="color: #5D3221;"> Site criado por Paulo Rafael paulo.rafael.jobs@gmail.com <a style="color: #5D3221;" href="https://paulorafaelweb.herokuapp.com/">www.paulorafaelweb.herokuapp.com</a></p>
+    </footer>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send/?phone=5527993113363&text&app_absent=0" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+    z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+
+    <script src="https://appnewcrm.herokuapp.com/js/script.js"></script>
+</body>
+</html>
